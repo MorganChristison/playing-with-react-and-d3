@@ -2,7 +2,7 @@
 import React from 'react';
 import ScatterPlot from './scatter-plot';
 
-const style = {
+const styles = {
 	width : 500,
 	height : 300,
 	padding : 30,
@@ -30,7 +30,7 @@ export default class Chart extends React.Component{
 		return <div>
 		<h1>Playing With React and D3</h1>
 		<ScatterPlot {...this.state} {...styles} />
-		div className="controls">
+		<div className="controls">
 			<button className="btn randomize" onClick={() => this.randomizeData()}>
 				Randomize Data
 			</button>
